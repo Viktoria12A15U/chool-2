@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Форма поиска в Яндексе</title>
 </head>
 <body>
-<form action="https://yandex.ru/search/">
-    <input type="text" name="text">
-    <input type="submit" value="Найти в Яндексе">
+<div class="SampleClass" align=center>
+<table border="1px solid black"; width=80%;>
+<tr><th>текст заголовка</th><th>текст заголовка</th><th>текст заголовка</th><th>текст заголовка</th></tr> <!--ряд с ячейками заголовков-->
+<tr height="120" align=center><td>данные</td><td>данные</td><td>данные</td><td>данные</td></tr> <!--ряд с ячейками тела таблицы-->
+</table>
+<hr style="border: 2px solid black;">
+<form action="https://yandex.ru/search/" method="get">
+    <label for="emailField">Email</label>
+    <input id="emailField" type="text" name="email">
+    <input type="submit" value="отправить"></form>
+<hr style="border: 2px solid black;">
+<form action="/order">
+    <p>Выберете любимое время суток:</p>
+	<label>
+        Вечер
+        <input type="checkbox" checked>
+    </label>
+    <br>
+    <label>
+        День
+        <input type="checkbox" >
+    </label>
+    <br>
+    <label>
+        Ночь
+        <input type="checkbox" checked>
+    </label>
+</form>
+<hr style="border: 2px solid black;">
+<form action="/order">
+    Выберите цвет футболки:
+    <br>
+    <label>
+        <input type="radio" name="color" value="red">
+        Красная
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="color" value="blue" checked>
+        Синяя
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="color" value="green">
+        Зелёная
+    </label>
+</form>
+<a href="">ссылка на репозиторий</a>
+</div>
 </form>
 </body>
 </html>
